@@ -1,13 +1,17 @@
 <?PHP
 
-# VARIABLEN:
+// VARIABLEN:
 $adresse = ""; // IP oder Hostname
 $port = ; // Queryport (Standard: 10011)
-# ENDE
+// ENDE
 
 $TeamSpeak3Server = @fsockopen ($adresse, $port, $errno, $errstr, 2);
 
-// Statustexte
+/* Statustexte:
+Möglichkeiten:
+1. <img scr="path/to/image">
+2. Text
+*/
 $Online = echo 'TeamSpeak-Server Online';
 $Offline = echo 'TeamSpeak-Server Offline';
 
